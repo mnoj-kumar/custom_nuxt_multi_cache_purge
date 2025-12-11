@@ -1,0 +1,9 @@
+name: "Nuxt Multi Cache Purge"
+type: module
+description: "Custom Drupal module to purge Nuxt multi-domain frontend caches based on content updates."
+core_version_requirement: ^10 || ^11
+version: "1.0.0"
+project: "custom_nuxt_multi_cache_purge"
+package: Custom
+dependencies:
+  - drupal:node

@@ -1,0 +1,4 @@
+services:
+  custom_nuxt_multi_cache_purge.purger:
+    class: Drupal\custom_nuxt_multi_cache_purge\Service\NuxtCachePurger
+    arguments: ['@http_client', '@path_alias.manager', '@logger.channel.default', '@config.factory']

@@ -1,0 +1,17 @@
+<?php
+
+use Drupal\node\Entity\Node;
+use Drupal\custom_nuxt_multi_cache_purge\Service\NuxtCachePurger;
+
+/**
+ * Implements hook_entity_update().
+ */
+function custom_nuxt_multi_cache_purge_entity_update(\Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity instanceof Node) {
+    $node_path = '/node/' . $entity->id();
+    
+    /** @var NuxtCachePurger $purger */
+    $purger = \Drupal::service('custom_nuxt_multi_cache_purge.purger');
+    $purger->purge($node_path);
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "manoj/custom_nuxt_multi_cache_purge",
+    "type": "drupal-module",
+    "description": "Custom Drupal module to purge Nuxt multi-domain frontend caches based on content updates.",
+    "keywords": [
+        "Drupal",
+        "Nuxt",
+        "cache purge",
+        "multi-domain"
+    ],
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {}
+}

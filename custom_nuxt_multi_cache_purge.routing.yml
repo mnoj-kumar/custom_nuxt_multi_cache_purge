@@ -1,0 +1,7 @@
+custom_nuxt_multi_cache_purge.settings:
+  path: '/admin/config/system/nuxt-cache-purge'
+  defaults:
+    _form: '\Drupal\custom_nuxt_multi_cache_purge\Form\NuxtCachePurgeSettingsForm'
+    _title: 'Nuxt Multi Cache Purge Settings'
+  requirements:
+    _permission: 'administer site configuration'
